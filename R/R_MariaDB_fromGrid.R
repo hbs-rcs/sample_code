@@ -1,21 +1,23 @@
 ## Purpose: Demonstrate how to connect to and interact with
 ##          the MariaDB database on the compute grid.
 ## Authors: Christine Rivera and Ista Zahn
+## Updated: March 19th 2020
 
 # Load libraries of interest (install if needed)
 library(DBI)
 library(dplyr)
 
 
-##############################################
-# Connect to a database specified in .my.cnf #
-##############################################
+####################################################################
+# Connect to a database using connection info specified in .my.cnf #
+####################################################################
 
-# Specify the location of your .my.cnf is.
+# Specify the location of your .my.cnf file.
 # See https://grid.rcs.hbs.org/db-configuration-files for details.
 myfile= path.expand("~/.my.cnf") # "~/" means "Home directory"
 
-# Specify the mysql group (correponds to '[mysql]' group in .my.cnf) 
+# Specify the mysql group to use. For example, "mysql" corresponds
+# to the '[mysql]' group in .my.cnf
 mygroup= 'mysql'
 
 # Connect to mysql as defined in .my.cnf.
