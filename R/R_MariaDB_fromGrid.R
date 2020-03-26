@@ -29,20 +29,13 @@ con <- dbConnect(RMariaDB::MariaDB(),
 
 # As an alternative to putting connection information in a .my.cnf file 
 # you can hard code your connection information.
-## user <- ""
-## password <- rstudioapi::askForPassword("What is your database password?") ## see the getPass package if not using Rstudio
-## host <- ""
-## port <- 3306
-## dbname <- ""
-## ssl.ca <- "" # path to ca-cert.pem file.
-##
 ## con2 <- dbConnect(RMariaDB::MariaDB(),
-##                   user= user, 
-##                   password= password,
-##                   host= host, 
-##                   port= port,
-##                   dbname= dbname,
-##                   ssl.ca= ssl.ca)
+##                   user= "", 
+##                   password= "",
+##                   host= "", 
+##                   port= 3306,
+##                   dbname= "",
+##                   ssl.ca= "")
 
 ## See https://rmariadb.r-dbi.org/ for details about connecting to MariaDB databases.
 
@@ -57,7 +50,7 @@ dbListObjects(con)
 # List tables in connected database.
 dbListTables(con)
 
-# Write data to table.
+# Write data to table (commented for safety, will create table in connected database)
 ## data(mtcars) # built-in R data set
 ## dbWriteTable(con, "sample_mtcars_table", mtcars)
 ## dbListTables(con)
