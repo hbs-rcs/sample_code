@@ -1,0 +1,4 @@
+*/15 * * * *    /export/home/itg/hlevinson/cron/check_pend.sh
+#*/09 * * * *   $HOME/cron/submit_script_to_bsub.sh $HOME/cron/sample_02.sh hlevinson@hbs.edu long
+#*/52 * * * *   $HOME/cron/submit_job_from_cron.sh  $HOME/cron/sample_job_01.sh
+
