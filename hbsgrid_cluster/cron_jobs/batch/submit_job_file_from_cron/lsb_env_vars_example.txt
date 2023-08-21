@@ -1,0 +1,42 @@
+/export/home/itg/hlevinson
+LSB_EXEC_CLUSTER=rcs_cluster
+LSB_EFFECTIVE_RSRCREQ=select[type == local] order[r15s:pg] rusage[mem=1000.00] span[hosts=1] affinity[core(1)*1] 
+LSB_DOCKER_JOB_STARTTS=1686761102
+LSB_BATCH_JID=2374758
+LSB_TRAPSIGS=trap # 15 10 12 2 1
+LSB_ERRORFILE=cron/logs/job_2374758.err
+LSB_MAX_NUM_PROCESSORS=2
+LSB_JOBRES_CALLBACK=59720@rhrcsnod23
+LSB_JOBID=2374758
+LSB_JOB_EXECUSER=hlevinson
+LSB_JOBRES_PID=67946
+LSB_JOBNAME=#!/usr/bin/env bash;# sample_job_01.sh;# Harry Levinson, 6/14/2023; # Use bsub commands only in this file, except for end; # Log file paths are relative to current directory, ;# where this script is, or absolute path, no variables;# %J will be batch job ID; #BSUB -o cron/logs/job_%J.out;#BSUB -e cron/logs/job_%J.err; # User job control settings ###########; #  B S U B -u hlevinson@hbs.edu	# put your own email address here;#BSUB -u hlevinson@hbs.edu; #BSUB -N			# enable email notifications when the job finishes;#BSUB -q long			# queue;#BSUB -n 2			# number of cores; #BSUB -We 02			# Maximum runtime in [HH:]MM;#BSUB -R "rusage[mem=1000]" 	# Memory reservation for the job, min MB for job to run;#BSUB -M 2000			# Upper memory limit, max MB; job cancelled if exceeded;  # User program to run;cd ~;pwd;mkdir -p ~/cron/logs > /dev/null 2>&1; # See what environment variables are there while bsub job runs;env | grep LSB; $HOME/cron/sample_01.sh
+LSB_PROJECT_NAME=default
+LSB_EEXEC_REAL_UID=
+LSB_CG_MEMLIMIT=0x7d000000
+LSB_SUB_RES_REQ=rusage[mem=1000]
+LSB_UNIXGROUP_INT=posix-itg
+LSB_HOSTS=rhrcsnod23 rhrcsnod23
+LSB_JOBFILENAME=/export/home/itg/hlevinson/.lsbatch/1686761102.2374758
+LSB_JOBINDEX=0
+LSB_EXIT_PRE_ABORT=99
+LSB_JOBEXIT_STAT=0
+LSB_RES_GET_FANOUT_INFO=Y
+LSB_CHKFILENAME=/export/home/itg/hlevinson/.lsbatch/1686761102.2374758
+LSB_DJOB_HOSTFILE=/export/home/itg/hlevinson/.lsbatch/1686761102.2374758.hostfile
+LSB_AFFINITY_HOSTFILE=/export/home/itg/hlevinson/.lsbatch/1686761102.2374758.hostAffinityFile
+LSB_EXEC_HOSTTYPE=X86_64
+LSB_DJOB_NUMPROC=2
+LSB_ACCT_FILE=/tmp/2374758.tmpdir/.1686761102.2374758.acct
+LSB_SUB_HOST=rhrcscli1
+LSB_SUB_USER=hlevinson
+LSB_OUTPUTFILE=cron/logs/job_2374758.out
+LSB_MCPU_HOSTS=rhrcsnod23 2 
+LSB_QUEUE=long
+LSB_OUTDIR=/export/home/itg/hlevinson
+LSB_ECHKPNT_RSH_CMD=ssh
+LSB_XFER_OP=
+LSB_EEXEC_REAL_GID=
+LSB_BIND_CPU_LIST=4,5,40,41
+LSB_DJOB_RANKFILE=/export/home/itg/hlevinson/.lsbatch/1686761102.2374758.hostfile
+echo from /export/home/itg/hlevinson/cron/sample_01.sh from user account hlevinson
