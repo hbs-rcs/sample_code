@@ -8,24 +8,28 @@ The Table of Contents below is not meant to be exhaustive. Please consult the RE
 in the appropriate folder of the directory tree. Please use the search capabilities
 to look through the full repository.
 
+
 ## Contents
 
 ### HBSGrid Cluster
-* [cron jobs](hbsgrid_cluster/cron_jobs)
+* [Cron jobs](hbsgrid_cluster/cron_jobs)
+
 
 ### MariaDB
-* Access and Queries in [R](R_MariaDB_from_Grid.R) / [Python](Python_MariaDB_fromGrid.py)
+* Access and Queries in [R](mariadb/R_MariaDB_from_Grid.R) / [Python](mariadb/Python_MariaDB_fromGrid.py)
+
 
 ### R
 * [Parallelization in R](R/R_parallel.R)
 
 
 ## Contributors
-* (add RCS team members here...)
-* Melissa Velez
-* Bob Freeman
 * Christine Rivera
-* ...
+* Ista Zahn
+* Bob Freeman
+* Melissa Velez
+* (add RCS team members here...)
+
 
 ## Resources
 
