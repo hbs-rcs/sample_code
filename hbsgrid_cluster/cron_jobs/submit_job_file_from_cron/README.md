@@ -86,3 +86,12 @@ Run once a day at 1:15pm:
 cd ~/cron
 ls -al logs/job_1234567.*
 ```
+
+
+---
+
+These materials have been developed by the RCS & RCS Support team members. These 
+are open access materials distributed under the terms of the 
+[Creative Commons Attribution license (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/),
+which permits unrestricted use, distribution, and reproduction in any medium, provided 
+the original author and source are credited.
