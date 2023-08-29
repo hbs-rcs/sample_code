@@ -16,19 +16,21 @@ to look through the full repository.
 
 
 ### MariaDB
-* Access and Queries in [R](mariadb/R_MariaDB_from_Grid.R) / [Python](mariadb/Python_MariaDB_fromGrid.py)
+* DB Access and Queries in [R](mariadb/R_MariaDB_from_Grid.R) / [Python](mariadb/Python_MariaDB_fromGrid.py)
 
 
 ### R
 * [Parallelization in R](R/R_parallel.R)
 
 
-## Contributors
-* Christine Rivera
-* Ista Zahn
+## Contributors (in alpha lastname order)
 * Bob Freeman
+* Harry Levinson
+* Christine Rivera
 * Melissa Velez
-* (add RCS team members here...)
+* Ista Zahn
+*
+* (add other RCS/RCS Support team members here...)
 
 
 ## Resources
